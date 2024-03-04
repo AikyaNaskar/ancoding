@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
-<script>
+<!-- <script>
     window.onload = function() {setTimeout(function(){document.body.style.opacity="100";},500);};
-</script>
+</script> -->
 <body  oncopy="return false" oncut="return false" onpaste="return false" oncontextmenu="return false">
     <header class="header" id="header">
         <nav class="nav container">
@@ -486,5 +486,10 @@
 
     <script src=""></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        $(window).on("load", function(){
+            $(".home__blob-img").fadeOut("slow");
+        });
+    </script>
 </body>
 </html>
